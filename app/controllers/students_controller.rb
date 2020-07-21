@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
 	def show
+<<<<<<< HEAD
 		@student = Student.find(params[:id])
 	end
 
@@ -27,4 +28,19 @@ class StudentsController < ApplicationController
   def student_params(*args)
     params.require(:student).permit(*args)
   end
+=======
+	end
+
+	def new
+	end
+
+	def create
+	end
+
+	def edit
+	end
+
+	def update
+	end
+>>>>>>> daec63801de212a504befdf77882be0cf27dbce6
 end

@@ -1,6 +1,9 @@
 class SchoolClassesController < ApplicationController
   def show
+<<<<<<< HEAD
     @school_class = SchoolClass.find(params[:id])
+=======
+>>>>>>> daec63801de212a504befdf77882be0cf27dbce6
 	end
 
 	def new
@@ -14,6 +17,7 @@ class SchoolClassesController < ApplicationController
 
 
 	def edit
+<<<<<<< HEAD
     @school_class = SchoolClass.find(params[:id])
 	end
 
@@ -21,6 +25,11 @@ class SchoolClassesController < ApplicationController
     @school_class = SchoolClass.find(params[:id])
     @school_class.update(school_class_params(:title, :room_number))
     redirect_to school_class_path(@school_class)
+=======
+	end
+
+	def update
+>>>>>>> daec63801de212a504befdf77882be0cf27dbce6
 	end
 
   def school_class_params(*args)
